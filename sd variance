@@ -1,0 +1,24 @@
+
+Prac 4:-
+my_data<-read.csv(file.choose(),sep = ",",header = TRUE)
+my_data
+sd_A<-sd(my_data$A)
+Var_A<-var(my_data$A)
+cat("standard variation of A:",sd_A,"\n")
+cat("variation of A:",Var_A,"\n")
+sd_B<-sd(my_data$B)
+Var_B<-var(my_data$B)
+cat("s d of B:",sd_B,"\n")
+cat("v of B:",Var_B,"\n")
+View(my_data)
+
+input<-data.frame(
+ X1=c(12, 6, 7, 3, 15, 10, 18, 5),
+ X2=c(9, 3, 8, 8, 9, 8, 9, 18)
+)
+print("Standard Deviaton of X1 and X2 are : ")
+sd(input$X1)
+sd(input$X2)
+print("Variance of X1 and X2 are : ")
+var(input$X1)
+var(input$X2)
